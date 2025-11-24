@@ -1,14 +1,13 @@
 let cardContainer = document.querySelector(".card-container");
-// Usando o seletor que está no seu código atual
+// O seletor correto para o campo de busca (o input dentro do header)
 let campoBusca = document.querySelector("header input"); 
 let dados = [];
 
-// Função que renderiza os cards no HTML (AGORA COM O CARD INTEIRO CLICÁVEL)
+// Função que renderiza os cards no HTML (COM O CARD INTEIRO CLICÁVEL)
 function renderizarCards(dados) {
     cardContainer.innerHTML = ""; // Limpa os cards existentes
     
     if (dados.length === 0) {
-        // Mensagem de "não encontrado"
         cardContainer.innerHTML = `
             <p style='color: var(--secondary-color); font-size: 1.2rem; text-align: center; width: 100%;'>
                 Nenhum curso encontrado com o termo digitado.
@@ -23,16 +22,17 @@ function renderizarCards(dados) {
         
         // 1. Cria o elemento <a> que envolve todo o conteúdo do card
         let anchor = document.createElement("a");
-        anchor.href = dado.link;        // Usa o link do data.json
-        anchor.target = "_blank";       // Abre em uma nova aba
-        anchor.classList.add("card-link-wrapper"); // Classe para estilização
+        anchor.href = dado.link;        
+        anchor.target = "_blank";       
+        anchor.classList.add("card-link-wrapper"); 
 
-        // 2. Adiciona TODO o conteúdo do card (título, descrição, etc.) dentro do link
+        // 2. Adiciona TODO o conteúdo do card dentro do link
         anchor.innerHTML = `
         <h2>${dado.nome}</h2>
         <p>${dado.data_criacao || dado.ano}</p>
         <p>${dado.descricao}</p>
-        <span class="saiba-mais-label">Saiba mais &raquo;</span> `;
+        <span class="saiba-mais-label">Saiba mais &raquo;</span>
+        `;
         
         // 3. Adiciona o link (com todo o conteúdo dentro) ao article
         article.appendChild(anchor);
@@ -47,14 +47,15 @@ async function iniciarBusca() {
             let resposta = await fetch("data.json");
             
             if (!resposta.ok) {
-                // Captura erro de Status (404, etc.)
-                throw new Error(`Erro ao buscar (Status: ${resposta.status}). Verifique o console para detalhes.`);
+                throw new Error(`Erro ao buscar (Status: ${resposta.status}).`);
             }
             dados = await resposta.json();
+            // Adiciona a funcionalidade de busca/filtro ao campo de input
+            campoBusca.addEventListener("input", iniciarBusca);
         } catch (error) {
-            console.error("ERRO CRÍTICO NA CARGA DO JSON. USE F12 PARA VER O DETALHE:", error);
+            console.error("ERRO CRÍTICO NA CARGA DO JSON:", error);
             cardContainer.innerHTML = `<p style='color: red; text-align: center; width: 100%;'>
-                ERRO: Falha ao carregar a lista de cursos. Verifique a sintaxe do data.json.
+                ERRO: Falha ao carregar a lista de cursos.
             </p>`;
             return;
         }
@@ -73,10 +74,4 @@ async function iniciarBusca() {
 // Chamada inicial: Carrega e exibe TUDO na abertura da página.
 document.addEventListener("DOMContentLoaded", () => {
     iniciarBusca(); 
-    // Garante que a busca seja iniciada também ao pressionar ENTER no campo de busca
-    campoBusca.addEventListener("keydown", (e) => {
-        if (e.key === "Enter") {
-            iniciarBusca();
-        }
-    });
 });

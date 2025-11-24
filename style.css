@@ -1,35 +1,147 @@
-/* --- ESTILOS DOS CARDS (ADICIONE/MODIFIQUE ESTAS REGRAS) --- */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
 
-/* 1. Modifica o Article para remover o padding e preparar o link */
-article.card {
-    background: #333; /* Cor de fundo do card */
-    padding: 0; /* Remove padding para que o link ocupe 100% */
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease-in-out;
-    cursor: pointer; /* Indica que o card é clicável */
-    position: relative;
-    overflow: hidden;
+* {
+    box-sizing: border-box;
 }
 
-/* 2. Estilo para o link que preenche o card */
+:root {
+    --primary-color: #8ab4f8; /* Azul claro (para destaque) */
+    --secondary-color: #e8eaed; /* Cinza claro (para texto principal) */
+    --tertiary-color: #9aa0a6; /* Cinza médio (para texto secundário) */
+    --bg-color: #202124; /* Cor de fundo (Dark Mode) */
+    --card-bg-color: #333; /* Cor de fundo do card */
+}
+
+body {
+    margin: 0;
+    background: var(--bg-color);
+    color: var(--secondary-color);
+    font-family: "Quicksand", sans-serif;
+    min-height: 100vh; /* Garante que o body ocupe a altura total da tela */
+}
+
+header {
+    padding: 2rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background: var(--bg-color);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+header h1 {
+    font-size: 2rem;
+    color: var(--primary-color);
+    font-weight: 700;
+    margin: 0;
+}
+
+header div {
+    display: flex;
+    gap: 1rem;
+}
+
+header input {
+    padding: 0.5rem 1rem;
+    border-radius: 25px;
+    border: 2px solid var(--primary-color);
+    background: #444;
+    color: var(--secondary-color);
+    font-size: 1.1rem;
+    outline: none;
+    transition: all 0.3s;
+}
+
+header input:focus {
+    border-color: var(--secondary-color);
+    box-shadow: 0 0 10px rgba(138, 180, 248, 0.5);
+}
+
+header input::placeholder {
+    color: var(--tertiary-color);
+}
+
+header button {
+    padding: 0.5rem 1.5rem;
+    border-radius: 25px;
+    border: none;
+    background: var(--primary-color);
+    color: var(--bg-color);
+    font-size: 1.1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+header button:hover {
+    background: #a0c3ff;
+}
+
+/* --- ESTILOS DO CONTEÚDO PRINCIPAL (LAYOUT GRID) --- */
+
+main {
+    padding: 2rem;
+}
+
+.card-container {
+    display: grid; /* CORREÇÃO: Essencial para o layout em colunas */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 1200px; /* Limita a largura do conteúdo principal */
+    margin: 0 auto; /* Centraliza a seção de cards */
+}
+
+/* --- ESTILOS DOS CARDS (Onde entra a funcionalidade de link total) --- */
+
+article.card {
+    background: var(--card-bg-color); /* Fundo do card */
+    padding: 0; /* CORREÇÃO CRÍTICA: Remove o padding para que o link interno ocupe 100% */
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s, border 0.3s;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    min-height: 180px; /* Garante uma altura mínima visualmente agradável */
+}
+
+/* NOVO ESTILO: Link que preenche o card inteiro */
 .card-link-wrapper {
-    display: block;     /* Faz o link preencher o bloco */
-    text-decoration: none; /* Remove o sublinhado */
-    color: inherit;     /* Herda a cor do texto do body */
+    display: block;     
+    text-decoration: none; /* Remove o sublinhado do link */
+    color: inherit;     /* Mantém a cor do texto definida no body */
     padding: 1.5rem;    /* Adiciona o espaçamento interno aqui */
     width: 100%;
     height: 100%;
 }
 
-/* 3. Estilo de destaque no hover (quando o mouse passa) */
 article.card:hover {
-    transform: scale(1.05);
-    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
-    border: 1px solid var(--primary-color); /* Adiciona borda azul no hover */
+    transform: scale(1.03); /* Efeito mais sutil no hover */
+    box-shadow: 0 8px 15px rgba(138, 180, 248, 0.2); /* Sombra mais destacada */
+    border: 1px solid var(--primary-color); /* Borda azul no hover */
 }
 
-/* 4. Estilo do label Saiba Mais */
+article.card h2 {
+    color: var(--secondary-color);
+    margin-top: 0;
+    font-size: 1.5rem;
+}
+
+article.card p:nth-of-type(1) { /* O primeiro parágrafo é o ano */
+    color: var(--tertiary-color);
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+}
+
+article.card p:nth-of-type(2) { /* O segundo parágrafo é a descrição */
+    color: var(--secondary-color);
+    flex-grow: 1; /* Faz a descrição ocupar o espaço para que o "Saiba mais" fique no final */
+}
+
+/* Estilo do label Saiba Mais */
 .saiba-mais-label {
     display: block;
     margin-top: 1rem;
@@ -38,7 +150,60 @@ article.card:hover {
     transition: color 0.2s;
 }
 
-/* Estilo do label no hover */
+/* Estilo do label no hover (para dar um feedback visual) */
 article.card:hover .saiba-mais-label {
-    color: var(--secondary-color); /* Muda a cor do texto Saiba Mais no hover */
+    color: #a0c3ff; /* Cor mais clara no hover */
+}
+
+
+/* --- RODAPÉ --- */
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+    border-top: 1px solid #333;
+}
+
+.footer-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links a {
+    color: var(--tertiary-color);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: var(--primary-color);
+}
+
+
+/* --- MEDIA QUERIES (Responsividade) --- */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    header div {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .card-container {
+        padding: 0 1rem;
+    }
+
+    /* Remove o efeito de escala em telas menores para evitar bugs */
+    article.card:hover { 
+        transform: none; 
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    }
 }

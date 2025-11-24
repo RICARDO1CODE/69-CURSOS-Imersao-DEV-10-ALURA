@@ -1,5 +1,6 @@
 let cardContainer = document.querySelector(".card-container");
-let campoBusca = document.querySelector("#campo-busca"); 
+// Usando o seletor que está no seu código atual
+let campoBusca = document.querySelector("header input"); 
 let dados = [];
 
 // Função que renderiza os cards no HTML (AGORA COM O CARD INTEIRO CLICÁVEL)
@@ -20,19 +21,20 @@ function renderizarCards(dados) {
         let article = document.createElement("article");
         article.classList.add("card");
         
-        // Cria o elemento <a> que envolve todo o conteúdo do card
+        // 1. Cria o elemento <a> que envolve todo o conteúdo do card
         let anchor = document.createElement("a");
-        anchor.href = dado.link;        // Usa o link estável da Alura
+        anchor.href = dado.link;        // Usa o link do data.json
         anchor.target = "_blank";       // Abre em uma nova aba
-        anchor.classList.add("card-link-wrapper"); 
+        anchor.classList.add("card-link-wrapper"); // Classe para estilização
 
-        // Adiciona TODO o conteúdo do card dentro do link
+        // 2. Adiciona TODO o conteúdo do card (título, descrição, etc.) dentro do link
         anchor.innerHTML = `
         <h2>${dado.nome}</h2>
         <p>${dado.data_criacao || dado.ano}</p>
         <p>${dado.descricao}</p>
         <span class="saiba-mais-label">Saiba mais &raquo;</span> `;
         
+        // 3. Adiciona o link (com todo o conteúdo dentro) ao article
         article.appendChild(anchor);
         cardContainer.appendChild(article);
     }
@@ -71,4 +73,10 @@ async function iniciarBusca() {
 // Chamada inicial: Carrega e exibe TUDO na abertura da página.
 document.addEventListener("DOMContentLoaded", () => {
     iniciarBusca(); 
+    // Garante que a busca seja iniciada também ao pressionar ENTER no campo de busca
+    campoBusca.addEventListener("keydown", (e) => {
+        if (e.key === "Enter") {
+            iniciarBusca();
+        }
+    });
 });

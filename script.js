@@ -1,13 +1,13 @@
 let cardContainer = document.querySelector(".card-container");
-let campoBusca = document.querySelector("#campo-busca"); // Seleciona o campo de busca pelo ID
-let dados = []; // Array que armazenará a lista de 69 cursos
+let campoBusca = document.querySelector("#campo-busca"); 
+let dados = [];
 
-// Função para renderizar os cards no HTML
+// Função que renderiza os cards no HTML (AGORA COM O CARD INTEIRO CLICÁVEL)
 function renderizarCards(dados) {
     cardContainer.innerHTML = ""; // Limpa os cards existentes
     
     if (dados.length === 0) {
-        // Mensagem de "não encontrado" se a busca falhar
+        // Mensagem de "não encontrado"
         cardContainer.innerHTML = `
             <p style='color: var(--secondary-color); font-size: 1.2rem; text-align: center; width: 100%;'>
                 Nenhum curso encontrado com o termo digitado.
@@ -20,37 +20,44 @@ function renderizarCards(dados) {
         let article = document.createElement("article");
         article.classList.add("card");
         
-        // Assume que o JSON tem as propriedades 'nome', 'descricao', 'data_criacao' (ou 'ano') e 'link' (ou 'link_oficial')
-        article.innerHTML = `
+        // Cria o elemento <a> que envolve todo o conteúdo do card
+        let anchor = document.createElement("a");
+        anchor.href = dado.link;        // Usa o link estável da Alura
+        anchor.target = "_blank";       // Abre em uma nova aba
+        anchor.classList.add("card-link-wrapper"); 
+
+        // Adiciona TODO o conteúdo do card dentro do link
+        anchor.innerHTML = `
         <h2>${dado.nome}</h2>
         <p>${dado.data_criacao || dado.ano}</p>
         <p>${dado.descricao}</p>
-        <a href="${dado.link || dado.link_oficial}" target="_blank">Saiba mais</a>
-        `
+        <span class="saiba-mais-label">Saiba mais &raquo;</span> `;
+        
+        article.appendChild(anchor);
         cardContainer.appendChild(article);
     }
 }
 
-// Função para buscar os dados, filtrar e renderizar o resultado
+// Função principal que carrega os dados e realiza a busca/filtragem
 async function iniciarBusca() {
-    // 1. Carregar dados (apenas na primeira vez)
     if (dados.length === 0) {
         try {
             let resposta = await fetch("data.json");
             
-            // Verifica se a busca pelo arquivo JSON foi bem-sucedida
             if (!resposta.ok) {
-                throw new Error(`Erro ${resposta.status}: O arquivo 'data.json' não foi encontrado ou está inacessível. Garanta que ele está na mesma pasta que o index.html.`);
+                // Captura erro de Status (404, etc.)
+                throw new Error(`Erro ao buscar (Status: ${resposta.status}). Verifique o console para detalhes.`);
             }
             dados = await resposta.json();
         } catch (error) {
-            console.error("FALHA CRÍTICA:", error);
-            cardContainer.innerHTML = `<p style='color: red; text-align: center; width: 100%;'>ERRO: Falha ao carregar a lista de cursos. Verifique se o arquivo data.json existe.</p>`;
+            console.error("ERRO CRÍTICO NA CARGA DO JSON. USE F12 PARA VER O DETALHE:", error);
+            cardContainer.innerHTML = `<p style='color: red; text-align: center; width: 100%;'>
+                ERRO: Falha ao carregar a lista de cursos. Verifique a sintaxe do data.json.
+            </p>`;
             return;
         }
     }
 
-    // 2. Filtrar os dados com base no texto digitado
     const termoBusca = campoBusca.value.toLowerCase();
     
     const dadosFiltrados = dados.filter(dado => 
@@ -58,11 +65,10 @@ async function iniciarBusca() {
         dado.descricao.toLowerCase().includes(termoBusca)
     );
 
-    // 3. Renderizar o resultado
     renderizarCards(dadosFiltrados);
 }
 
-// CHAMADA INICIAL: Carrega e exibe todos os cards assim que o navegador termina de carregar o HTML.
+// Chamada inicial: Carrega e exibe TUDO na abertura da página.
 document.addEventListener("DOMContentLoaded", () => {
-    iniciarBusca();
+    iniciarBusca(); 
 });

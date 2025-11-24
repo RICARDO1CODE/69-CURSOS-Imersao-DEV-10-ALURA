@@ -1,0 +1,674 @@
+[
+  {
+    "nome": "HTML e CSS: Ambiente de desenvolvimento, estrutura de arquivos e tags",
+    "descricao": "O ponto de partida para qualquer desenvolvedor web. Aprenda a estruturar o conteúdo e a estilizar suas páginas.",
+    "data_criacao": "2024",
+    "link": "https://www.alura.com.br/curso-online-html-css-ambiente-arquivos-tags",
+    "tags": ["frontend", "web", "basico", "iniciante"]
+  },
+  {
+    "nome": "JavaScript: Arrays, de forma e métodos",
+    "descricao": "Domine as estruturas de dados fundamentais do JavaScript e manipule listas de informações de forma eficiente.",
+    "data_criacao": "2023",
+    "link": "https://www.alura.com.br/curso-online-javascript-arrays",
+    "tags": ["javascript", "frontend", "programacao", "logica"]
+  },
+  {
+    "nome": "Python: Entendendo a linguagem e o ecossistema",
+    "descricao": "Inicie sua jornada com Python, uma das linguagens mais versáteis do mercado, usada em IA, Data Science e web.",
+    "data_criacao": "2024",
+    "link": "https://www.alura.com.br/curso-online-python-entendendo-linguagem",
+    "tags": ["python", "backend", "data science", "ia", "basico"]
+  },
+  {
+    "nome": "Java: Primeiros passos",
+    "descricao": "Fundamentos da programação Java e orientação a objetos, essenciais para o mercado corporativo.",
+    "data_criacao": "2023",
+    "link": "https://www.alura.com.br/curso-online-java-primeiros-passos",
+    "tags": ["java", "backend", "orientacao a objetos", "basico"]
+  },
+  {
+    "nome": "React: Desenvolvendo com JavaScript e TypeScript",
+    "descricao": "Crie interfaces de usuário modernas e escaláveis com a biblioteca mais popular do frontend.",
+    "data_criacao": "2024",
+    "link": "https://www.alura.com.br/curso-online-react-javascript-typescript",
+    "tags": ["react", "frontend", "typescript", "framework"]
+  },
+  {
+    "nome": "Node.js: Criando API's com Express",
+    "descricao": "Aprenda a construir servidores e APIs robustas utilizando Node.js e o framework Express.",
+    "data_criacao": "2023",
+    "link": "https://www.alura.com.br/curso-online-node-js-apis-express",
+    "tags": ["node.js", "backend", "api", "javascript"]
+  },
+  {
+    "nome": "Angular: Primeiros passos",
+    "descricao": "Domine o framework completo do Google para criar aplicações Single Page Application (SPA).",
+    "data_criacao": "2024",
+    "link": "https://www.alura.com.br/curso-online-angular-primeiros-passos",
+    "tags": ["angular", "frontend", "framework", "typescript"]
+  },
+  {
+    "nome": "Vue.js: Gerenciando estados com Vuex",
+    "descricao": "Desenvolva com a progressiva framework Vue.js e aprenda a gerenciar estados complexos com Vuex.",
+    "data_criacao": "2023",
+    "link": "https://www.alura.com.br/curso-online-vue-js-vuex",
+    "tags": ["vue.js", "frontend", "framework", "estado"]
+  },
+  {
+    "nome": "SQL com MySQL: Manipulação e criação de tabelas",
+    "descricao": "Introdução ao mundo dos bancos de dados relacionais com foco em MySQL e consultas SQL.",
+    "data_criacao": "2024",
+    "link": "https://www.alura.com.br/curso-online-sql-mysql-tabelas",
+    "tags": ["sql", "banco de dados", "backend", "mysql"]
+  },
+  {
+    "nome": "C#: Fundamentos e Orientação a Objetos",
+    "descricao": "Aprenda a linguagem C# da Microsoft, essencial para desenvolvimento .NET e Unity.",
+    "data_criacao": "2023",
+    "link": "https://www.alura.com.br/curso-online-csharp-fundamentos-oo",
+    "tags": ["c#", "backend", "microsoft", "orientacao a objetos"]
+  },
+  {
+    "nome": "Docker: Primeiros passos com conteiners",
+    "descricao": "Introdução à conteinerização e ao Docker, ferramenta fundamental em DevOps.",
+    "data_criacao": "2024",
+    "link": "https://www.alura.com.br/curso-online-docker-primeiros-passos",
+    "tags": ["devops", "docker", "conteinerizacao", "infraestrutura"]
+  },
+  {
+    "nome": "Git e GitHub: Controle e compartilhamento de código",
+    "descricao": "Domine o sistema de controle de versão mais usado no mercado para trabalho em equipe.",
+    "data_criacao": "2023",
+    "link": "https://www.alura.com.br/curso-online-git-github-controle-compartilhamento",
+    "tags": ["git", "github", "devops", "ferramenta"]
+  },
+  {
+    "nome": "Sass: Descomplicando o CSS com pré-processadores",
+    "descricao": "Escreva CSS de forma mais poderosa, com variáveis, aninhamento e funções.",
+    "data_criacao": "2024",
+    "link": "https://www.alura.com.br/curso-online-sass-pre-processadores",
+    "tags": ["css", "frontend", "sass", "estilizacao"]
+  },
+  {
+    "nome": "Figma: Design visual de um produto",
+    "descricao": "Crie layouts, protótipos e designs de interfaces de usuário de alta fidelidade.",
+    "data_criacao": "2023",
+    "link": "https://www.alura.com.br/curso-online-figma-design-visual",
+    "tags": ["ux", "design", "ferramenta", "prototipacao"]
+  },
+  {
+    "nome": "NoSQL com MongoDB: Introdução ao NoSQL",
+    "descricao": "Aprenda sobre bancos de dados não relacionais e o popular MongoDB.",
+    "data_criacao": "2024",
+    "link": "https://www.alura.com.br/curso-online-mongodb-introducao",
+    "tags": ["nosql", "banco de dados", "mongodb", "backend"]
+  },
+  {
+    "nome": "PHP: Conhecendo a linguagem",
+    "descricao": "Inicie com PHP, a linguagem que domina o backend de muitos sites, incluindo o WordPress.",
+    "data_criacao": "2023",
+    "link": "https://www.alura.com.br/curso-online-php-conhecendo-linguagem",
+    "tags": ["php", "backend", "web", "programacao"]
+  },
+  {
+    "nome": "Kotlin: Programação orientada a objetos",
+    "descricao": "Desenvolva para Android e backend com a linguagem moderna e concisa suportada pelo Google.",
+    "data_criacao": "2024",
+    "link": "https://www.alura.com.br/curso-online-kotlin-orientacao-objetos",
+    "tags": ["kotlin", "mobile", "backend", "android"]
+  },
+  {
+    "nome": "Spring Boot: Desenvolvendo com Java",
+    "descricao": "Crie aplicações robustas em microserviços com o framework líder do ecossistema Java.",
+    "data_criacao": "2023",
+    "link": "https://www.alura.com.br/curso-online-spring-boot-java",
+    "tags": ["spring", "java", "backend", "microservicos"]
+  },
+  {
+    "nome": "Azure: Introdução à Nuvem e aos Serviços",
+    "descricao": "Aprenda os conceitos básicos e serviços essenciais da plataforma de nuvem da Microsoft.",
+    "data_criacao": "2024",
+    "link": "https://www.alura.com.br/curso-online-azure-introducao-servicos",
+    "tags": ["cloud", "azure", "devops", "infraestrutura"]
+  },
+  {
+    "nome": "Google Cloud Platform: Primeiros passos",
+    "descricao": "Conheça os serviços de computação e infraestrutura da nuvem do Google (GCP).",
+    "data_criacao": "2023",
+    "link": "https://www.alura.com.br/curso-online-google-cloud-primeiros-passos",
+    "tags": ["cloud", "gcp", "devops", "infraestrutura"]
+  },
+  {
+    "nome": "AWS: Introdução à Amazon Web Services",
+    "descricao": "Domine os principais serviços da AWS, a plataforma de nuvem mais utilizada no mundo.",
+    "data_criacao": "2024",
+    "link": "https://www.alura.com.br/curso-online-aws-introducao-servicos",
+    "tags": ["cloud", "aws", "devops", "infraestrutura"]
+  },
+  {
+    "nome": "SEO: Otimização para mecanismos de busca",
+    "descricao": "Técnicas e estratégias para melhorar o posicionamento do seu site no Google e outros buscadores.",
+    "data_criacao": "2023",
+    "link": "https://www.alura.com.br/curso-online-seo-otimizacao",
+    "tags": ["marketing", "seo", "web", "estrategia"]
+  },
+  {
+    "nome": "Excel: Fórmulas e gráficos",
+    "descricao": "Aprenda a usar fórmulas avançadas e a criar visualizações de dados profissionais no Excel.",
+    "data_criacao": "2024",
+    "link": "https://www.alura.com.br/curso-online-excel-formulas-graficos",
+    "tags": ["produtividade", "dados", "analise", "ferramenta"]
+  },
+  {
+    "nome": "Lógica de Programação: Introdução e Variáveis",
+    "descricao": "Desenvolva o raciocínio lógico essencial antes de aprender qualquer linguagem de programação.",
+    "data_criacao": "2023",
+    "link": "https://www.alura.com.br/curso-online-logica-programacao-introducao",
+    "tags": ["logica", "basico", "programacao", "algoritmos"]
+  },
+  {
+    "nome": "Design Thinking: Inovação em projetos",
+    "descricao": "Metodologia para resolver problemas complexos com foco na empatia e nas necessidades do usuário.",
+    "data_criacao": "2024",
+    "link": "https://www.alura.com.br/curso-online-design-thinking",
+    "tags": ["metodologia", "inovacao", "ux", "estrategia"]
+  },
+  {
+    "nome": "Scrum: Agilidade em seu projeto",
+    "descricao": "Aprenda o framework ágil mais popular para gerenciar projetos de forma flexível e eficiente.",
+    "data_criacao": "2023",
+    "link": "https://www.alura.com.br/curso-online-scrum-agilidade",
+    "tags": ["agile", "scrum", "gestao", "metodologia"]
+  },
+  {
+    "nome": "Análise de Dados com Pandas: Manipulação de DataFrames",
+    "descricao": "Domine a biblioteca Pandas para limpar, transformar e analisar grandes volumes de dados em Python.",
+    "data_criacao": "2024",
+    "link": "https://www.alura.com.br/curso-online-pandas-dataframes",
+    "tags": ["data science", "python", "analise", "pandas"]
+  },
+  {
+    "nome": "Machine Learning: Regressão linear",
+    "descricao": "Primeiros passos em Machine Learning, focando em modelos de regressão para previsão de valores.",
+    "data_criacao": "2023",
+    "link": "https://www.alura.com.br/curso-online-machine-learning-regressao",
+    "tags": ["ia", "machine learning", "data science", "algoritmos"]
+  },
+  {
+    "nome": "Testes unitários em Java: JUnit",
+    "descricao": "Garanta a qualidade do seu código Java utilizando a estrutura de testes JUnit.",
+    "data_criacao": "2024",
+    "link": "https://www.alura.com.br/curso-online-testes-unitarios-junit",
+    "tags": ["testes", "java", "qualidade", "backend"]
+  },
+  {
+    "nome": "Segurança Web: Prevenindo ataques e vulnerabilidades",
+    "descricao": "Aprenda a proteger suas aplicações contra os ataques mais comuns da web, como XSS e SQL Injection.",
+    "data_criacao": "2023",
+    "link": "https://www.alura.com.br/curso-online-seguranca-web-vulnerabilidades",
+    "tags": ["seguranca", "web", "backend", "devops"]
+  },
+  {
+    "nome": "Next.js: Trabalhando com SSR e Rotas",
+    "descricao": "Desenvolva aplicações React com renderização no lado do servidor (SSR) e roteamento avançado.",
+    "data_criacao": "2024",
+    "link": "https://www.alura.com.br/curso-online-next-js-ssr-rotas",
+    "tags": ["react", "frontend", "ssr", "framework"]
+  },
+  {
+    "nome": "Tailwind CSS: Estilizando do zero com classes utilitárias",
+    "descricao": "Domine o framework CSS de classes utilitárias para construir interfaces rápidas e customizáveis.",
+    "data_criacao": "2023",
+    "link": "https://www.alura.com.br/curso-online-tailwind-css",
+    "tags": ["css", "frontend", "framework", "estilizacao"]
+  },
+  {
+    "nome": "Bootstrap 5: Criando layouts responsivos",
+    "descricao": "Utilize o framework front-end mais popular para criar layouts responsivos de forma ágil.",
+    "data_criacao": "2024",
+    "link": "https://www.alura.com.br/curso-online-bootstrap-5-layouts",
+    "tags": ["frontend", "framework", "css", "responsividade"]
+  },
+  {
+    "nome": "Arquitetura de Software: Visão Geral e Padrões",
+    "descricao": "Entenda como projetar sistemas complexos, conhecendo os principais padrões e estilos arquiteturais.",
+    "data_criacao": "2023",
+    "link": "https://www.alura.com.br/curso-online-arquitetura-software-padroes",
+    "tags": ["arquitetura", "backend", "software", "teoria"]
+  },
+  {
+    "nome": "Go: Introdução à linguagem",
+    "descricao": "Primeiros passos com Go (Golang), a linguagem eficiente e escalável do Google.",
+    "data_criacao": "2024",
+    "link": "https://www.alura.com.br/curso-online-go-introducao",
+    "tags": ["go", "backend", "google", "programacao"]
+  },
+  {
+    "nome": "TypeScript: Tipagem estática para JavaScript",
+    "descricao": "Eleve a qualidade do seu código JavaScript com a segurança da tipagem estática.",
+    "data_criacao": "2023",
+    "link": "https://www.alura.com.br/curso-online-typescript-tipagem",
+    "tags": ["typescript", "javascript", "frontend", "backend"]
+  },
+  {
+    "nome": "Testes automatizados com Cypress",
+    "descricao": "Crie testes de ponta a ponta (E2E) robustos e rápidos para suas aplicações web.",
+    "data_criacao": "2024",
+    "link": "https://www.alura.com.br/curso-online-testes-cypress",
+    "tags": ["testes", "frontend", "automacao", "cypress"]
+  },
+  {
+    "nome": "PostgreSQL: Administrando um banco de dados",
+    "descricao": "Gerencie e otimize o popular banco de dados PostgreSQL, conhecido por sua robustez.",
+    "data_criacao": "2023",
+    "link": "https://www.alura.com.br/curso-online-postgresql-administrando",
+    "tags": ["postgresql", "banco de dados", "backend", "sql"]
+  },
+  {
+    "nome": "Redes de Computadores: Introdução e fundamentos",
+    "descricao": "Entenda como a internet funciona, desde os protocolos TCP/IP até o modelo OSI.",
+    "data_criacao": "2024",
+    "link": "https://www.alura.com.br/curso-online-redes-computadores",
+    "tags": ["networking", "infraestrutura", "basico", "teoria"]
+  },
+  {
+    "nome": "Segurança da Informação: Primeiros passos",
+    "descricao": "Conceitos essenciais de segurança da informação para proteger dados e sistemas.",
+    "data_criacao": "2023",
+    "link": "https://www.alura.com.br/curso-online-seguranca-informacao-primeiros-passos",
+    "tags": ["seguranca", "governança", "basico"]
+  },
+  {
+    "nome": "iOS com Swift: Criando o primeiro app",
+    "descricao": "Desenvolvimento de aplicativos nativos para iPhone e iPad usando a linguagem Swift da Apple.",
+    "data_criacao": "2024",
+    "link": "https://www.alura.com.br/curso-online-ios-swift-primeiro-app",
+    "tags": ["mobile", "ios", "swift", "apple"]
+  },
+  {
+    "nome": "Android nativo com Kotlin: Fundamentos",
+    "descricao": "Inicie o desenvolvimento nativo para o sistema operacional Android usando Kotlin.",
+    "data_criacao": "2023",
+    "link": "https://www.alura.com.br/curso-online-android-kotlin-fundamentos",
+    "tags": ["mobile", "android", "kotlin", "google"]
+  },
+  {
+    "nome": "Flutter: Desenvolvendo aplicativos multiplataforma",
+    "descricao": "Crie apps nativos para Android e iOS com uma única base de código usando o framework Flutter.",
+    "data_criacao": "2024",
+    "link": "https://www.alura.com.br/curso-online-flutter-multiplataforma",
+    "tags": ["mobile", "flutter", "multiplataforma", "dart"]
+  },
+  {
+    "nome": "React Native: Criando um app mobile",
+    "descricao": "Desenvolva aplicativos mobile nativos usando o React e JavaScript/TypeScript.",
+    "data_criacao": "2023",
+    "link": "https://www.alura.com.br/curso-online-react-native-app-mobile",
+    "tags": ["mobile", "react native", "javascript", "multiplataforma"]
+  },
+  {
+    "nome": "Design Patterns: Boas práticas de programação",
+    "descricao": "Aprenda soluções reutilizáveis para problemas comuns de design de software.",
+    "data_criacao": "2024",
+    "link": "https://www.alura.com.br/curso-online-design-patterns-boas-praticas",
+    "tags": ["programacao", "arquitetura", "padroes", "orientacao a objetos"]
+  },
+  {
+    "nome": "Microsserviços: Comunicação e escalabilidade",
+    "descricao": "Projete sistemas distribuídos e aprenda a arquitetura de microsserviços.",
+    "data_criacao": "2023",
+    "link": "https://www.alura.com.br/curso-online-microsservicos-comunicacao-escalabilidade",
+    "tags": ["arquitetura", "backend", "devops", "microsservicos"]
+  },
+  {
+    "nome": "Kubernetes: Orquestrando conteiners",
+    "descricao": "Domine a ferramenta de orquestração de conteiners mais importante do mercado, essencial para DevOps avançado.",
+    "data_criacao": "2024",
+    "link": "https://www.alura.com.br/curso-online-kubernetes-orquestrando",
+    "tags": ["kubernetes", "devops", "infraestrutura", "conteinerizacao"]
+  },
+  {
+    "nome": "Terraform: Infraestrutura como código (IaC)",
+    "descricao": "Gerencie e provisione sua infraestrutura de nuvem com código usando o Terraform.",
+    "data_criacao": "2023",
+    "link": "https://www.alura.com.br/curso-online-terraform-iac",
+    "tags": ["iac", "devops", "infraestrutura", "terraform"]
+  },
+  {
+    "nome": "Web Design Responsivo: Layouts e Media Queries",
+    "descricao": "Crie layouts que se adaptam perfeitamente a qualquer tamanho de tela e dispositivo.",
+    "data_criacao": "2024",
+    "link": "https://www.alura.com.br/curso-online-web-design-responsivo",
+    "tags": ["frontend", "css", "responsividade", "web design"]
+  },
+  {
+    "nome": "Acessibilidade Web: Implementando elementos acessíveis",
+    "descricao": "Aprenda a tornar suas páginas acessíveis para todos os usuários, seguindo padrões WAI-ARIA.",
+    "data_criacao": "2023",
+    "link": "https://www.alura.com.br/curso-online-acessibilidade-web",
+    "tags": ["frontend", "acessibilidade", "web", "boas praticas"]
+  },
+  {
+    "nome": "UX Writing: Conteúdo para interfaces",
+    "descricao": "Domine a arte de escrever textos claros, concisos e úteis para melhorar a experiência do usuário.",
+    "data_criacao": "2024",
+    "link": "https://www.alura.com.br/curso-online-ux-writing",
+    "tags": ["ux", "escrita", "design", "conteudo"]
+  },
+  {
+    "nome": "Jornadas e Wireframes: Projetando a experiência",
+    "descricao": "Aprenda a mapear a jornada do usuário e a criar wireframes de baixa fidelidade.",
+    "data_criacao": "2023",
+    "link": "https://www.alura.com.br/curso-online-jornadas-wireframes",
+    "tags": ["ux", "design", "prototipacao", "metodologia"]
+  },
+  {
+    "nome": "Estatística com R: Análise de dados",
+    "descricao": "Introdução à linguagem R para análise estatística e visualização de dados.",
+    "data_criacao": "2024",
+    "link": "https://www.alura.com.br/curso-online-estatistica-r-analise",
+    "tags": ["data science", "r", "estatistica", "analise"]
+  },
+  {
+    "nome": "Power BI: Criando Dashboards",
+    "descricao": "Desenvolva dashboards interativos e poderosos para visualização e análise de dados de negócios.",
+    "data_criacao": "2023",
+    "link": "https://www.alura.com.br/curso-online-power-bi-dashboards",
+    "tags": ["bi", "dados", "power bi", "visualizacao"]
+  },
+  {
+    "nome": "Tableau: Análise e Visualização de Dados",
+    "descricao": "Domine o Tableau, uma das principais ferramentas de visualização de dados do mercado.",
+    "data_criacao": "2024",
+    "link": "https://www.alura.com.br/curso-online-tableau-analise",
+    "tags": ["bi", "dados", "tableau", "visualizacao"]
+  },
+  {
+    "nome": "Data Viz: Princípios de visualização de dados",
+    "descricao": "Aprenda os princípios para criar gráficos e visualizações que contam histórias claras e eficazes.",
+    "data_criacao": "2023",
+    "link": "https://www.alura.com.br/curso-online-data-viz-principios",
+    "tags": ["data science", "visualizacao", "design", "teoria"]
+  },
+  {
+    "nome": "Criação de Chatbots com Dialogflow",
+    "descricao": "Desenvolva assistentes virtuais e chatbots inteligentes usando a plataforma do Google.",
+    "data_criacao": "2024",
+    "link": "https://www.alura.com.br/curso-online-chatbot-dialogflow",
+    "tags": ["ia", "chatbot", "google", "dialogflow"]
+  },
+  {
+    "nome": "Automação com Selenium WebDriver",
+    "descricao": "Crie scripts de automação de testes funcionais para aplicações web com Selenium e Python/Java.",
+    "data_criacao": "2023",
+    "link": "https://www.alura.com.br/curso-online-automacao-selenium",
+    "tags": ["testes", "automacao", "selenium", "qa"]
+  },
+  {
+    "nome": "Integração Contínua com Jenkins",
+    "descricao": "Configure o Jenkins para automatizar builds, testes e deploys no seu fluxo de CI/CD.",
+    "data_criacao": "2024",
+    "link": "https://www.alura.com.br/curso-online-integracao-continua-jenkins",
+    "tags": ["devops", "ci/cd", "jenkins", "automacao"]
+  },
+  {
+    "nome": "Infraestrutura como Código com Ansible",
+    "descricao": "Use o Ansible para automatizar o provisionamento, configuração e gerenciamento de servidores.",
+    "data_criacao": "2023",
+    "link": "https://www.alura.com.br/curso-online-ansible-iac",
+    "tags": ["iac", "devops", "ansible", "infraestrutura"]
+  },
+  {
+    "nome": "Metodologias Ágeis: Kanban e Lean",
+    "descricao": "Aprofunde-se nas metodologias Kanban e Lean para otimizar o fluxo de trabalho e reduzir desperdício.",
+    "data_criacao": "2024",
+    "link": "https://www.alura.com.br/curso-online-metodologias-ageis-kanban-lean",
+    "tags": ["agile", "gestao", "metodologia", "kanban"]
+  },
+  {
+    "nome": "Gestão de Produtos: Product Discovery e Roadmap",
+    "descricao": "Aprenda a identificar oportunidades de mercado e a construir um roadmap de produto eficaz.",
+    "data_criacao": "2023",
+    "link": "https://www.alura.com.br/curso-online-gestao-produtos-discovery-roadmap",
+    "tags": ["gestao", "produto", "estrategia", "pm"]
+  },
+  {
+    "nome": "Soft Skills: Comunicação e Liderança",
+    "descricao": "Desenvolva habilidades interpessoais cruciais para o sucesso em qualquer carreira.",
+    "data_criacao": "2024",
+    "link": "https://www.alura.com.br/curso-online-soft-skills-comunicacao-lideranca",
+    "tags": ["soft skills", "carreira", "lideranca", "comunicacao"]
+  },
+  {
+    "nome": "Criação de API REST com Python (Flask)",
+    "descricao": "Construa APIs leves e rápidas usando o micro-framework Flask do Python.",
+    "data_criacao": "2023",
+    "link": "https://www.alura.com.br/curso-online-api-rest-python-flask",
+    "tags": ["python", "backend", "api", "flask"]
+  },
+  {
+    "nome": "Desenvolvimento com Ruby on Rails",
+    "descricao": "Domine o framework que acelera o desenvolvimento web, com convenção sobre configuração.",
+    "data_criacao": "2024",
+    "link": "https://www.alura.com.br/curso-online-ruby-on-rails-desenvolvimento",
+    "tags": ["ruby", "backend", "rails", "framework"]
+  },
+  {
+    "nome": "Data Science: Introdução com Python",
+    "descricao": "Passos iniciais na carreira de Data Science, explorando bibliotecas como Numpy e Matplotlib.",
+    "data_criacao": "2023",
+    "link": "https://www.alura.com.br/curso-online-data-science-introducao-python",
+    "tags": ["data science", "python", "analise", "basico"]
+  },
+  {
+    "nome": "Modelagem de Dados: Entidades e Relacionamentos",
+    "descricao": "Aprenda a projetar bancos de dados relacionais de forma correta e eficiente (Modelo E-R).",
+    "data_criacao": "2024",
+    "link": "https://www.alura.com.br/curso-online-modelagem-dados-relacionamentos",
+    "tags": ["banco de dados", "sql", "modelagem", "teoria"]
+  },
+  {
+    "nome": "Programação Funcional em JavaScript",
+    "descricao": "Explore o paradigma funcional para escrever código mais limpo e previsível em JavaScript.",
+    "data_criacao": "2023",
+    "link": "https://www.alura.com.br/curso-online-programacao-funcional-javascript",
+    "tags": ["javascript", "programacao", "funcional", "frontend"]
+  },
+  {
+    "nome": "Clean Code: Boas práticas para código limpo",
+    "descricao": "Aprenda a escrever código mais legível, manutenível e de alta qualidade.",
+    "data_criacao": "2024",
+    "link": "https://www.alura.com.br/curso-online-clean-code-boas-praticas",
+    "tags": ["boas praticas", "qualidade", "programacao", "clean code"]
+  },
+  {
+    "nome": "Refatoração: Melhorando o design de código existente",
+    "descricao": "Domine as técnicas de refatoração para transformar um código ruim em um código de qualidade.",
+    "data_criacao": "2023",
+    "link": "https://www.alura.com.br/curso-online-refatoracao-design-codigo",
+    "tags": ["programacao", "qualidade", "refatoracao", "orientacao a objetos"]
+  },
+  {
+    "nome": "WebAssembly: Introdução e uso com Rust",
+    "descricao": "Explore o WebAssembly (Wasm) para rodar código de alta performance no navegador.",
+    "data_criacao": "2024",
+    "link": "https://www.alura.com.br/curso-online-webassembly-rust",
+    "tags": ["webassembly", "frontend", "rust", "performance"]
+  },
+  {
+    "nome": "CI/CD com GitHub Actions",
+    "descricao": "Automatize seus fluxos de trabalho de Integração Contínua e Entrega Contínua usando GitHub Actions.",
+    "data_criacao": "2023",
+    "link": "https://www.alura.com.br/curso-online-github-actions-ci-cd",
+    "tags": ["devops", "ci/cd", "github", "automacao"]
+  },
+  {
+    "nome": "Monitoramento e Logs com Prometheus e Grafana",
+    "descricao": "Implemente um sistema robusto de monitoramento para sua infraestrutura e aplicações.",
+    "data_criacao": "2024",
+    "link": "https://www.alura.com.br/curso-online-prometheus-grafana",
+    "tags": ["devops", "monitoramento", "infraestrutura", "observabilidade"]
+  },
+  {
+    "nome": "Computação em Nuvem: Conceitos e Prática",
+    "descricao": "Visão geral aprofundada dos modelos de nuvem (IaaS, PaaS, SaaS) e suas aplicações.",
+    "data_criacao": "2023",
+    "link": "https://www.alura.com.br/curso-online-computacao-nuvem-conceitos-pratica",
+    "tags": ["cloud", "infraestrutura", "teoria", "devops"]
+  },
+  {
+    "nome": "Testes de Performance com JMeter",
+    "descricao": "Aprenda a simular grandes volumes de usuários para testar a escalabilidade de suas aplicações.",
+    "data_criacao": "2024",
+    "link": "https://www.alura.com.br/curso-online-testes-performance-jmeter",
+    "tags": ["testes", "qa", "performance", "jmeter"]
+  },
+  {
+    "nome": "Criptografia e Assinaturas Digitais",
+    "descricao": "Entenda os algoritmos de criptografia e como garantir a autenticidade de dados.",
+    "data_criacao": "2023",
+    "link": "https://www.alura.com.br/curso-online-criptografia-assinaturas",
+    "tags": ["seguranca", "teoria", "criptografia", "backend"]
+  },
+  {
+    "nome": "Micro Frontends: Arquiteturas com Single-SPA",
+    "descricao": "Divida grandes aplicações frontend em partes menores, facilitando o desenvolvimento e deploy.",
+    "data_criacao": "2024",
+    "link": "https://www.alura.com.br/curso-online-micro-frontends-single-spa",
+    "tags": ["frontend", "arquitetura", "microservicos", "single-spa"]
+  },
+  {
+    "nome": "TypeScript com Orientação a Objetos",
+    "descricao": "Aplique todos os conceitos de Orientação a Objetos (Classes, Herança, Polimorfismo) usando TypeScript.",
+    "data_criacao": "2023",
+    "link": "https://www.alura.com.br/curso-online-typescript-orientacao-objetos",
+    "tags": ["typescript", "programacao", "orientacao a objetos", "backend"]
+  },
+  {
+    "nome": "GraphQL: Primeiros passos com Apollo Server",
+    "descricao": "Aprenda a criar APIs flexíveis e eficientes usando GraphQL, o sucessor do REST.",
+    "data_criacao": "2024",
+    "link": "https://www.alura.com.br/curso-online-graphql-apollo",
+    "tags": ["graphql", "api", "backend", "apollo"]
+  },
+  {
+    "nome": "WebSockets: Comunicação em tempo real",
+    "descricao": "Desenvolva aplicações que precisam de comunicação bidirecional e instantânea.",
+    "data_criacao": "2023",
+    "link": "https://www.alura.com.br/curso-online-websockets-tempo-real",
+    "tags": ["web", "backend", "frontend", "protocolo"]
+  },
+  {
+    "nome": "Banco de Dados em Memória com Redis",
+    "descricao": "Utilize o Redis como cache e banco de dados em memória para aumentar a performance das suas aplicações.",
+    "data_criacao": "2024",
+    "link": "https://www.alura.com.br/curso-online-redis-banco-em-memoria",
+    "tags": ["redis", "banco de dados", "cache", "performance"]
+  },
+  {
+    "nome": "Apache Kafka: Mensageria e Streams",
+    "descricao": "Implemente um sistema de mensageria distribuído e escalável com Apache Kafka.",
+    "data_criacao": "2023",
+    "link": "https://www.alura.com.br/curso-online-apache-kafka-mensageria",
+    "tags": ["kafka", "backend", "devops", "mensageria"]
+  },
+  {
+    "nome": "Realidade Virtual com Unity",
+    "descricao": "Crie experiências imersivas de Realidade Virtual (VR) usando o motor de jogos Unity.",
+    "data_criacao": "2024",
+    "link": "https://www.alura.com.br/curso-online-realidade-virtual-unity",
+    "tags": ["vr", "unity", "jogos", "c#"]
+  },
+  {
+    "nome": "Introdução ao Blockchain e Criptomoedas",
+    "descricao": "Entenda os conceitos por trás da tecnologia Blockchain, como funciona o Bitcoin e outras criptomoedas.",
+    "data_criacao": "2023",
+    "link": "https://www.alura.com.br/curso-online-blockchain-criptomoedas",
+    "tags": ["blockchain", "cripto", "tecnologia", "fintech"]
+  },
+  {
+    "nome": "Cálculo e Álgebra Linear para Machine Learning",
+    "descricao": "Revisão dos fundamentos matemáticos essenciais para entender algoritmos de Machine Learning.",
+    "data_criacao": "2024",
+    "link": "https://www.alura.com.br/curso-online-calculo-algebra-linear-ml",
+    "tags": ["ia", "machine learning", "matematica", "teoria"]
+  },
+  {
+    "nome": "Otimização de Performance no Frontend",
+    "descricao": "Técnicas avançadas para carregar suas páginas mais rapidamente e melhorar a experiência do usuário.",
+    "data_criacao": "2024",
+    "link": "https://www.alura.com.br/curso-online-otimizacao-performance-frontend",
+    "tags": ["frontend", "performance", "web", "boas praticas"]
+  },
+  {
+    "nome": "Design System: Criando e mantendo bibliotecas de componentes",
+    "descricao": "Aprenda a criar um sistema de design coeso para escalar o desenvolvimento e a marca.",
+    "data_criacao": "2023",
+    "link": "https://www.alura.com.br/curso-online-design-system",
+    "tags": ["design", "frontend", "ux", "metodologia"]
+  },
+  {
+    "nome": "Automação de Infraestrutura com Chef",
+    "descricao": "Gerenciamento de configuração para automatizar o deploy e a manutenção de servidores.",
+    "data_criacao": "2024",
+    "link": "https://www.alura.com.br/curso-online-automacao-chef",
+    "tags": ["devops", "infraestrutura", "automacao", "chef"]
+  },
+  {
+    "nome": "Computação Quântica: Introdução aos conceitos",
+    "descricao": "Visão geral dos princípios da computação quântica e seus potenciais impactos na tecnologia.",
+    "data_criacao": "2023",
+    "link": "https://www.alura.com.br/curso-online-computacao-quantica-introducao",
+    "tags": ["ia", "teoria", "avancado", "fisica"]
+  },
+  {
+    "nome": "Introdução a Redes Neurais e Deep Learning",
+    "descricao": "Aprenda os fundamentos de Redes Neurais, o alicerce do Deep Learning e IA moderna.",
+    "data_criacao": "2024",
+    "link": "https://www.alura.com.br/curso-online-redes-neurais-deep-learning",
+    "tags": ["ia", "machine learning", "deep learning", "python"]
+  },
+  {
+    "nome": "Aplicações Serverless com AWS Lambda",
+    "descricao": "Crie e gerencie funções serverless na AWS, focando em escalabilidade e custo-benefício.",
+    "data_criacao": "2023",
+    "link": "https://www.alura.com.br/curso-online-serverless-aws-lambda",
+    "tags": ["cloud", "serverless", "aws", "backend"]
+  },
+  {
+    "nome": "Banco de Dados Orientado a Grafos com Neo4j",
+    "descricao": "Explore a modelagem e consultas em bancos de dados de grafos, ideais para relações complexas.",
+    "data_criacao": "2024",
+    "link": "https://www.alura.com.br/curso-online-neo4j-grafos",
+    "tags": ["banco de dados", "nosql", "neo4j", "grafos"]
+  },
+  {
+    "nome": "Design Emocional: Criando conexões com o usuário",
+    "descricao": "Projete interfaces que gerem emoções positivas e criem laços duradouros com os usuários.",
+    "data_criacao": "2023",
+    "link": "https://www.alura.com.br/curso-online-design-emocional",
+    "tags": ["ux", "design", "psicologia", "estrategia"]
+  },
+  {
+    "nome": "Microserviços com gRPC e Protocol Buffers",
+    "descricao": "Aprenda a comunicação entre microsserviços usando o protocolo de alto desempenho gRPC.",
+    "data_criacao": "2024",
+    "link": "https://www.alura.com.br/curso-online-grpc-protocol-buffers",
+    "tags": ["microservicos", "backend", "grpc", "arquitetura"]
+  },
+  {
+    "nome": "Automação de Testes Mobile com Appium",
+    "descricao": "Crie testes de automação para aplicativos nativos e híbridos em Android e iOS.",
+    "data_criacao": "2023",
+    "link": "https://www.alura.com.br/curso-online-automacao-mobile-appium",
+    "tags": ["testes", "mobile", "appium", "qa"]
+  },
+  {
+    "nome": "Programação Reativa com RxJava e Reactor",
+    "descricao": "Domine o paradigma de programação reativa para lidar com assincronicidade e streams de dados.",
+    "data_criacao": "2024",
+    "link": "https://www.alura.com.br/curso-online-programacao-reativa-rxjava",
+    "tags": ["programacao", "backend", "java", "reativa"]
+  }
+]

@@ -1,0 +1,207 @@
+/* --- CONFIGURAÇÃO DE FONTE: SPECIAL GOTHIC (GOOGLE FONTS) --- */
+@import url('https://fonts.googleapis.com/css2?family=Special+Gothic&display=swap');
+
+/* Reset básico e configurações globais */
+* {
+    box-sizing: border-box; 
+}
+
+/* --- VARIÁVEIS DE COR: ESQUEMA ALURA (Azul / Laranja / Escuro) --- */
+:root {
+    --primary-color: #0588d1;   /* Azul Alura (Cor principal) */
+    --secondary-color: #ff9f00;  /* Laranja Alura (Cor de destaque e hover) */
+    --tertiary-color: #f0f0f0;  /* Cinza claro (para texto principal) */
+    --bg-color: #1e1e1e;        /* Fundo escuro sutil da página */
+    --card-bg-color: #2b2b2b;   /* Fundo do card */
+}
+
+/* Estilos do Corpo da Página */
+body {
+    margin: 0;
+    background: var(--bg-color); 
+    color: var(--tertiary-color); 
+    font-family: 'Special Gothic', sans-serif; 
+}
+
+/* Estilos do Cabeçalho (HEADER) */
+header {
+    padding: 2rem 1rem;
+    display: flex;
+    justify-content: center; /* Centraliza verticalmente */
+    flex-direction: column; 
+    gap: 1.5rem;
+    position: sticky; 
+    top: 0;
+    z-index: 5;
+    background-color: var(--bg-color);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+header h1 {
+    color: var(--primary-color); /* Título em AZUL */
+    font-size: 2.5rem;
+    margin: 0 auto; 
+}
+
+/* A div que contém o input e o botão (Tamanho Grande e Centralizado) */
+header div {
+    display: flex;
+    align-items: center;
+    position: relative; 
+    /* LARGURA MÁXIMA GRANDE */
+    max-width: 85rem; 
+    /* Centraliza o bloco horizontalmente na tela */
+    margin: 0 auto; 
+    width: 100%; 
+}
+
+/* Estilos do Campo de Busca (INPUT) */
+#campo-busca {
+    width: 100%; 
+    padding: 0.7rem 1rem;
+    border-radius: 0.5rem 0 0 0.5rem;
+    border: 2px solid var(--primary-color); /* Borda da linha de digitação em AZUL */
+    font-size: 1.1rem;
+    background-color: var(--card-bg-color);
+    color: var(--tertiary-color); 
+}
+
+#campo-busca::placeholder {
+    color: var(--tertiary-color); 
+    opacity: 0.6;
+}
+
+/* Estilos do Botão de Busca */
+#botao-busca {
+    background-color: var(--primary-color); /* Fundo do botão em AZUL */
+    color: white; 
+    border: none;
+    padding: 0.7rem 1.5rem;
+    border-radius: 0 0.5rem 0.5rem 0;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: background-color 0.3s, transform 0.1s;
+}
+
+#botao-busca:hover {
+    background-color: var(--secondary-color); /* Hover do botão em LARANJA */
+    color: white;
+}
+
+/* Estilos da Área Principal (MAIN) */
+main {
+    padding: 2rem;
+    min-height: 80vh;
+}
+
+/* Estilos do Container dos Cards */
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+/* Estilos de Cada Card (ARTICLE) */
+article.card {
+    background-color: var(--card-bg-color);
+    border-left: 5px solid var(--secondary-color); /* Borda lateral em LARANJA */
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    transition: transform 0.3s, box-shadow 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+article.card:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+article.card h2 {
+    color: var(--primary-color); /* Título do card em AZUL */
+    margin-top: 0;
+    font-size: 1.5rem;
+}
+
+article.card p {
+    margin: 0.5rem 0;
+}
+
+article.card a {
+    color: var(--secondary-color); /* Links do card em LARANJA */
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 1rem;
+}
+
+/* Sugestões de Busca (Autocomplete) */
+#sugestoes-busca {
+    width: 100%; /* Ocupa a largura máxima definida pelo header div (85rem) */
+    max-height: 15rem;
+    overflow-y: auto;
+    background-color: var(--card-bg-color);
+    border: 1px solid var(--primary-color); /* Borda em AZUL */
+    border-top: none;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    z-index: 10;
+    left: 0; 
+    top: 100%; 
+    border-radius: 0 0 0.5rem 0.5rem;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5);
+    display: none; 
+}
+
+/* Estilos do Rodapé (FOOTER) */
+.footer {
+    background-color: #111;
+    padding: 1.5rem 1rem;
+    text-align: center;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.footer-links a {
+    color: var(--tertiary-color); 
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: var(--secondary-color); /* Efeito Hover do link em LARANJA */
+}
+
+
+/* Media Queries para Responsividade */
+@media (max-width: 768px) {
+    header div {
+        flex-direction: column;
+        gap: 0.5rem;
+        max-width: 90vw;
+        margin: 0 auto; 
+    }
+
+    /* Reduz a largura para telas pequenas */
+    #campo-busca,
+    #sugestoes-busca {
+        width: 100%; 
+        border-radius: 0.5rem;
+    }
+    
+    #botao-busca {
+        width: 100%;
+        border-radius: 0.5rem;
+    }
+}
